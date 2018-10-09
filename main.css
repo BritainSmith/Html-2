@@ -1,0 +1,127 @@
+body {
+  background-color: rgb(18, 18, 119);
+  line-height: 2;
+}
+.center-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.outer-box {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 67px;
+  text-align: center;
+  color: white;
+  position: relative;
+  width: 75%;
+  height: 75%;
+  background: rgb(18, 18, 119);
+  margin: 10vh auto;
+  padding: 0px;
+
+  box-sizing: border-box;
+}
+
+.inner-box {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 23px;
+  text-align: center;
+  color: white;
+  position: relative;
+  width: 56%;
+  height: 350px;
+  background: rgb(18, 18, 119);
+  margin: 0 auto;
+}
+
+.inner-box div {
+  display: inline-block;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: green;
+}
+
+.inner-box div:nth-child(1) {
+  top: 20px;
+  left: 20px;
+}
+
+.inner-box div:nth-child(2) {
+  top: 20px;
+  right: 20px;
+}
+
+.inner-box div:nth-child(3) {
+  bottom: 20px;
+  left: 20px;
+}
+
+.inner-box div:nth-child(4) {
+  bottom: 20px;
+  right: 20px;
+}
+
+.box {
+  height: 200px;
+}
+
+#static {
+  background: burlywood;
+  width: 200px;
+  position: static;
+}
+
+#relative {
+  width: 200px;
+  background: lawngreen;
+  position: relative;
+}
+
+#absolute {
+  background: fuchsia;
+  width: 200px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.nav-bar {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: -55px;
+  width: 65%;
+  height: 0px;
+  background: rgb(18, 18, 119);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 12%;
+}
+
+.nav-item {
+  display: flex;
+  height: 70px;
+  color: white;
+  width: 0%;
+  font-size: 11px;
+}
+
+.button-explore {
+  font-family: "aktiv-grotesk", sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border: none;
+  color: blue;
+  padding: 21px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 4px 2px;
+  border-radius: 52px;
+}
